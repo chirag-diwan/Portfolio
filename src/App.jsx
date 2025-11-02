@@ -1,12 +1,15 @@
-import { useState } from 'react'
-import './App.css'
+import './App.css';
+import {AboutMe , Background , Projects} from './react-component/homepage';
+
 
 function App() {
-    const [count, setCount] = useState(0)
-
     return (
-        <div/>
-    )
+        <div>
+            <Background/>
+            <AboutMe/>
+            <Projects/>
+        </div>
+    );
 }
 
 export default App

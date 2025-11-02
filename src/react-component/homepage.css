@@ -1,0 +1,50 @@
+.background {
+    width: 100dvw;
+    height: 100dvh;
+    z-index: -1;
+    object-fit: fill;
+    position: absolute;
+}
+
+.about {
+    background-color: rgba(45,45,45,0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    width: 100dvw;
+    height: 40dvh;
+    display: flex;
+    flex-direction: row;
+    transform: translateY(60dvh);
+    padding: 1rem;
+    font-family: cursive;
+    
+}
+
+.logo{
+    border-radius: 20px;
+    height: 90%;
+    align-self: center;
+    margin-right: 5%;
+}
+
+.image-container{
+    border-radius: 20px;
+    height: 90%;
+    align-self: center;
+    margin-right: 5%;
+}
+
+.projects{
+    margin-top: 4%;
+    background-color: rgba(45,45,45,0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    width: 100dvw;
+    height: 80dvh;
+    display: flex;
+    flex-direction: row;
+    transform: translateY(60dvh);
+    padding: 1rem;
+    font-family: cursive;
+}
+
