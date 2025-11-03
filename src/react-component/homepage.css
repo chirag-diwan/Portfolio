@@ -48,3 +48,7 @@
     font-family: cursive;
 }
 
+#card{
+    width: 100dvw;
+    height: 20dvh;
+}
