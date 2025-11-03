@@ -1,54 +1,90 @@
 .background {
-    width: 100dvw;
-    height: 100dvh;
+    width: 100vw;
+    height: 100vh;
     z-index: -1;
-    object-fit: fill;
+    object-fit: cover;
     position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .about {
-    background-color: rgba(45,45,45,0.3);
+    background-color: rgba(45, 45, 45, 0.3);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    width: 100dvw;
-    height: 40dvh;
+    width: 100vw;
     display: flex;
     flex-direction: row;
-    transform: translateY(60dvh);
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(60vh);
     padding: 1rem;
     font-family: cursive;
-    
+    box-sizing: border-box;
 }
 
-.logo{
+.logo,
+.image-container {
     border-radius: 20px;
     height: 90%;
+    max-height: 480px;
     align-self: center;
     margin-right: 5%;
 }
 
-.image-container{
-    border-radius: 20px;
-    height: 90%;
-    align-self: center;
-    margin-right: 5%;
-}
-
-.projects{
-    margin-top: 4%;
-    background-color: rgba(45,45,45,0.3);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    width: 100dvw;
-    height: 80dvh;
+.projects {
+    margin-top: 95vh;
+    background-color: rgba(25, 25, 25, 0.8);
+    width: 100vw;
     display: flex;
-    flex-direction: row;
-    transform: translateY(60dvh);
+    flex-direction: column;
     padding: 1rem;
     font-family: cursive;
+    overflow-wrap: break-word;
+    white-space: normal;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
-#card{
-    width: 100dvw;
-    height: 20dvh;
+/* ⚠️ Fixed selector here */
+.about h1,
+.projects h1 {
+    font-size: 2.5rem;
+    word-break: break-word;
+}
+
+p {
+    font-size: 2rem; /* ✅ removed invalid * p selector */
+}
+
+.card {
+    margin: 2% 0;
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.image-text-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2%;
+    font-family: fantasy;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.image-text-container h1 {
+    font-size: 5rem;
+    word-break: break-word;
+}
+
+.image-text-container img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
 }

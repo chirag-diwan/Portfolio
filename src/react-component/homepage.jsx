@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import './homepage.css';
 
 
-
 export function Background(){
     return (
         <img src='/images/background.png' className='background'>
@@ -27,34 +26,34 @@ export function AboutMe(){
 }
 
 export function Projects(){
-    const [data , setData] = useState([]);
+    const [data , setData] = useState([...Array(2).fill('')]);
     useEffect(()=>{
         async function fetchData(serverFilePath){
             const res = await fetch(serverFilePath);
-            const fdata = res.json();
+            const fdata = await res.json();
             setData(fdata);
         }
         fetchData('/data/projects.json');
     },[]);
-
-    if(data){
-        return (
-            <div className='projects'>
-                {data.map((project , i)=>{
-                    <div key={i} className='card'>
-                        <div className='image-container'>
-                            <img/>
-                        </div>
-                        <div className='text-container'>
-                            <h1>{project.name}</h1>
-                            <p>{project.description}</p>
-                        </div>
-                    </div>
-                })}
-            </div>
-        );
-    }
     return (
-        <div/>
+        <div className='projects'>
+            <div className='image-text-container'>
+                <img src='/images/project-icon.png' className='icon'/>
+                <h1>Projects</h1>
+            </div>
+            {data.map((project , i)=>(
+                <div key={i} className='card' style={
+                    {
+                        textAlign: i % 2 == 0 ? 'start' : 'end'
+                    }
+                }>
+                    <div className='text-container'>
+                        <h1>{project.Name}</h1>
+                        <p>{project.description}</p>
+                        <link href={project.link}/>
+                    </div>
+                </div>
+            ))}
+        </div>
     );
 }
