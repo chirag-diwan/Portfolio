@@ -1,17 +1,17 @@
 [
   {
     "Name": "Sort Me",
-    "description": "A tool to help developers automatically reorganise their project folders and update import/include statements across multiple languages. Intended to reduce manual folder restructuring work and keep dependencies consistent when module locations change. It parses your codebase, detects directory/movement changes and fixes hard-coded paths or import lines accordingly.",
+    "description": "A modular tool that scans your multi-language codebase, detects folder relocations and automatically updates import/include statements (JavaScript, TypeScript, Python, C++). Designed to reduce manual refactoring effort when restructuring project directories. Includes dependency graph generation, change preview UI, and undo capabilities.",
     "link": "https://github.com/chirag-diwan/SortMe"
   },
   {
     "Name": "Intergrate Me",
-    "description": "An integrated development environment (IDE) project designed for multi-platform usage (Windows, Linux and Android). The goal is to provide a unified interface for coding, building and debugging across different operating systems, with streamlined workflows, extensible plugins, version control integration and cross-platform consistency.",
+    "description": "Cross-platform Integrated Development Environment (Windows, Linux, Android) with unified UI, high-performance build pipelines, plugin architecture, version-control integration (Git + Mercurial), and live debugging support. Focused on streamlining workflows across devices and OSes for full-stack developers.",
     "link": "https://github.com/chirag-diwan/IntergrateMe"
   },
   {
     "Name": "OffLee",
-    "description": "A fully offline learning/challenge application aiming to replicate the experience of coding challenge platforms but without an internet requirement. Users can practice algorithmic problems, see test cases, submit locally and feedback is given instantly. Good for environments with limited connectivity or for practicing without online distractions.",
+    "description": "Offline-first coding-challenge learning application that brings the experience of algorithmic problem solving without an internet connection. Users can attempt curated problems, see immediate test-case feedback, explore hints, track progress locally, and sync later when online. Ideal for limited-connectivity environments or distraction-free practice.",
     "link": "https://github.com/chirag-diwan/OffLee"
   }
 ]

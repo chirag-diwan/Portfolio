@@ -1,0 +1,17 @@
+:root{
+    --primary-background: #000B58;
+    --primary-foreground: #003161;
+    --secondry-foreground: #006A67;
+    --tertairy-foreground: #FDEB9E;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
